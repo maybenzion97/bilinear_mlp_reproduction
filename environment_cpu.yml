@@ -1,4 +1,4 @@
-name: fact_cpu
+name: bilinear_mlp_cpu
 channels:
   - conda-forge
   - defaults

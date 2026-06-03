@@ -1506,7 +1506,7 @@ def generate_paper_hub(d: Dirs) -> None:
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>FACT-AI Paper Hub (Vision)</title>
+  <title>Bilinear MLP Paper Hub (Vision)</title>
   {plotly_js}
   <style>
     body {{ font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; margin: 0; }}

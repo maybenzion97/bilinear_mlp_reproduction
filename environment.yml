@@ -1,4 +1,4 @@
-name: fact
+name: bilinear_mlp
 channels:
   - pytorch
   - nvidia

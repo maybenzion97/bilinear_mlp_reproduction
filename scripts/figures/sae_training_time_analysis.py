@@ -258,7 +258,7 @@ def main():
         print(f"Cosine metric: output will be saved to {args.output}")
     
     # Run analysis with emissions tracking
-    with track_emissions("fact-bilinear") as tracker:
+    with track_emissions("bilinear-mlp-reproduction") as tracker:
         all_results, output_file = run_analysis(args)
     
     # Add emissions to results

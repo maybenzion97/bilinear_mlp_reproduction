@@ -1,5 +1,5 @@
 """
-Shared utilities for FACT-AI experiments.
+Shared utilities for experiments.
 
 Consolidates common patterns from training and analysis scripts:
 - Device detection
@@ -120,7 +120,7 @@ def set_seed(seed: int) -> None:
     """
     Set random seeds for full reproducibility across Python, NumPy, and PyTorch.
     
-    This is NON-NEGOTIABLE for the error bars requirement in FACT-AI.
+    This is NON-NEGOTIABLE for the error bars requirement.
     
     Args:
         seed: Random seed (e.g., 42, 43, 44, 45, 46)
@@ -175,7 +175,7 @@ class TrackingResult:
 
 
 @contextmanager
-def track_emissions(project_name: str = "fact-bilinear"):
+def track_emissions(project_name: str = "bilinear-mlp-reproduction"):
     """
     Context manager for tracking CO2 emissions and wall time.
 
@@ -241,9 +241,9 @@ def track_emissions(project_name: str = "fact-bilinear"):
         )
 
 
-# Default wandb settings for the FACT-AI project team
-WANDB_ENTITY = "itayerlich96-student"
-WANDB_PROJECT = "fact-bilinear"
+# Default wandb settings for the project team
+WANDB_ENTITY = "student"
+WANDB_PROJECT = "bilinear_mlp"
 
 
 def init_wandb(

@@ -1,5 +1,5 @@
 """
-Centralized path constants for the FACT-AI Bilinear MLP project.
+Centralized path constants for the Bilinear MLP project.
 
 This module provides a single source of truth for all checkpoint and figure paths,
 reducing duplication and making path changes easier to manage.
@@ -14,7 +14,7 @@ Usage:
 
 from pathlib import Path
 
-# Project root (UvA_FACT_2025/)
+# Project root (bilinear_mlp_reproduction/)
 PROJECT_ROOT = Path(__file__).parent.parent
 
 # =============================================================================

@@ -472,7 +472,7 @@ def main():
             output_dir = get_output_dir(model_short, layer, sae_tag=sae_tag)
         
         # Run with emissions tracking
-        with track_emissions("fact-bilinear") as tracker:
+        with track_emissions("bilinear-mlp-reproduction") as tracker:
             stats = precompute_eigenpairs(
                 model_name=model,
                 layer=layer,

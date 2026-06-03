@@ -182,7 +182,7 @@ activate_conda() {
     fi
     if command -v conda &> /dev/null; then
         eval "$(conda shell.bash hook)"
-        conda activate fact_cpu 2>/dev/null || conda activate fact 2>/dev/null || echo "Warning: Could not activate conda env"
+        conda activate bilinear_mlp_cpu 2>/dev/null || conda activate bilinear_mlp 2>/dev/null || echo "Warning: Could not activate conda env"
     fi
 }
 
@@ -209,7 +209,7 @@ PY
 # Print header
 print_header() {
     echo "=========================================="
-    echo "FACT-AI Language Experiments"
+    echo "Language Experiments"
     echo "=========================================="
     echo "Command: $COMMAND"
     echo "Device: $DEVICE"

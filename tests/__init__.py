@@ -1,1 +1,1 @@
-# Tests for FACT-AI Bilinear MLP project
+# Tests for Bilinear MLP project

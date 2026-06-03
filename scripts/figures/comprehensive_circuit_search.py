@@ -358,7 +358,7 @@ def main():
                              use_streaming=args.streaming, chunk_size=args.chunk_size)
     else:
         # Track emissions for the full search
-        with track_emissions("fact-bilinear") as tracker:
+        with track_emissions("bilinear-mlp-reproduction") as tracker:
             final_results = search_all_circuits(
                 device=args.device,
                 batch_size=args.batch_size,

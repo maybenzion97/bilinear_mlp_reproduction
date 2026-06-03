@@ -1,5 +1,5 @@
 """
-Data utilities and dataset wrappers for FACT experiments.
+Data utilities and dataset wrappers for Bilinear MLP experiments.
 
 This module provides:
 - MNIST/Fashion-MNIST wrappers with optional CoM normalization

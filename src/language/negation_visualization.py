@@ -667,7 +667,7 @@ def main():
         n_samples = int(args.n_samples)
     
     # Run with emissions tracking
-    with track_emissions("fact-bilinear") as tracker:
+    with track_emissions("bilinear-mlp-reproduction") as tracker:
         # Use LanguageContext for unified model/SAE/Tracer loading
         ctx = LanguageContext(config, device)
         model = ctx.model

@@ -1,4 +1,4 @@
-# FACT-AI: Bilinear MLP Interpretability (UvA MSc AI)
+# Bilinear MLP Interpretability
 
 This repository reproduces and extends ["Bilinear MLPs enable weight-based mechanistic interpretability"](https://arxiv.org/pdf/2410.08417) (Pearce et al., ICLR 2025). It targets:
 - **Section 4 (Vision)**: MNIST/Fashion-MNIST bilinear MLP eigendecomposition
@@ -41,10 +41,10 @@ These commands verify the environment and run minimal tests.
 
 ```bash
 # Snellius (GPU)
-conda env create -f environment.yml && conda activate fact
+conda env create -f environment.yml && conda activate bilinear_mlp
 
 # Local (CPU/MPS)
-conda env create -f environment_cpu.yml && conda activate fact_cpu
+conda env create -f environment_cpu.yml && conda activate bilinear_mlp_cpu
 ```
 
 ## Notebooks (All Results)
@@ -62,7 +62,7 @@ The `notebooks/` directory contains Jupyter notebooks that reproduce **all figur
 
 ```bash
 # Activate environment
-conda activate fact_cpu  # or fact for GPU
+conda activate bilinear_mlp_cpu  # or bilinear_mlp for GPU
 
 # Start Jupyter
 jupyter notebook notebooks/
@@ -223,7 +223,7 @@ If automatic download fails (e.g., SSL issues, rate limiting), download manually
 
 3. **Verify the structure:**
    ```
-   UvA_FACT_2025/
+   bilinear_mlp_reproduction/
    ├── checkpoints/
    │   ├── vision/
    │   │   ├── mnist/
@@ -295,7 +295,7 @@ python -m pytest tests/ -v -k "test_effective_rank"
 ## Repository Structure (High-Level)
 
 ```
-UvA_FACT_2025/
+bilinear_mlp_reproduction/
 ├── notebooks/           # Jupyter notebooks with all results (run these!)
 │   ├── 01_reproduction_vision.ipynb   # Vision experiments (Section 4)
 │   ├── 02_reproduction_language.ipynb # Language experiments (Section 5)

@@ -105,14 +105,14 @@ activate_conda() {
     fi
     if command -v conda &> /dev/null; then
         eval "$(conda shell.bash hook)"
-        conda activate fact_cpu 2>/dev/null || conda activate fact 2>/dev/null || echo "Warning: Could not activate conda env"
+        conda activate bilinear_mlp_cpu 2>/dev/null || conda activate bilinear_mlp 2>/dev/null || echo "Warning: Could not activate conda env"
     fi
 }
 
 # Print header
 print_header() {
     echo "=========================================="
-    echo "FACT-AI Vision Experiments"
+    echo "Vision Experiments"
     echo "=========================================="
     echo "Command: $COMMAND ${SUBCOMMAND:-}"
     if $QUICK_MODE; then echo "Mode: QUICK (2 epochs, 1 seed)"; fi

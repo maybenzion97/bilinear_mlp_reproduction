@@ -185,7 +185,7 @@ def main() -> int:
             print(f"Training {tag}: noise_std={noise_std}, weight_decay={wd} -> {path}")
             
             # Track emissions for each variant
-            with track_emissions("fact-bilinear-challenge") as tracker:
+            with track_emissions("bilinear-mlp-reproduction-challenge") as tracker:
                 ckpt = train_challenge_variant(
                     device=device,
                     seed=seed,

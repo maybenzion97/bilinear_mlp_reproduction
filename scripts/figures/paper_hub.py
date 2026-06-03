@@ -297,7 +297,7 @@ def generate_paper_hub() -> None:
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>FACT-AI Paper Hub</title>
+  <title>Bilinear MLP Paper Hub</title>
   <style>
     body {{ font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; margin: 0; }}
     .layout {{ display: grid; grid-template-columns: 360px 1fr; height: 100vh; }}

@@ -203,7 +203,7 @@ def main():
     )
 
     # Train with tracking
-    with track_emissions("fact-bilinear") as tracker:
+    with track_emissions("bilinear-mlp-reproduction") as tracker:
         sae, model, sae_config_dict = train_sae(config, device)
 
     # Finalize wandb

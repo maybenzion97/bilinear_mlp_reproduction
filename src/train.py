@@ -327,7 +327,7 @@ def main():
 
     # Train with tracking
     print(f"Training {config_name} with seed {args.seed}...")
-    with track_emissions("fact-bilinear") as tracker:
+    with track_emissions("bilinear-mlp-reproduction") as tracker:
         model, history, eigenvalues, eigenvectors = train_vision_model(
             config, args.seed, device, epochs
         )

@@ -29,7 +29,7 @@ def get_cache_dir() -> Path:
                 _CACHE_DIR = parent / "data" / "cache" / "com"
                 break
         if _CACHE_DIR is None:
-            _CACHE_DIR = Path.home() / ".cache" / "fact_bilinear" / "com"
+            _CACHE_DIR = Path.home() / ".cache" / "bilinear_mlp" / "com"
     
     _CACHE_DIR.mkdir(parents=True, exist_ok=True)
     return _CACHE_DIR

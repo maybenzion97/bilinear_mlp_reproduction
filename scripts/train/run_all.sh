@@ -1,5 +1,5 @@
 #!/bin/bash
-# Master script for ALL FACT-AI experiments with CodeCarbon tracking
+# Master script for ALL experiments with CodeCarbon tracking
 #
 # This script runs all experiments sequentially to ensure accurate per-experiment
 # emissions measurements. It covers:
@@ -118,7 +118,7 @@ fi
 
 # Header
 echo "========================================================================"
-echo "FACT-AI COMPLETE EXPERIMENT PIPELINE"
+echo "COMPLETE EXPERIMENT PIPELINE"
 echo "========================================================================"
 echo "Project root: $PROJECT_ROOT"
 echo "Test mode: $TEST_MODE"
