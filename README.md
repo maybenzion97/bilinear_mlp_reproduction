@@ -250,25 +250,6 @@ Verify with: `md5 checkpoints.zip results.zip` (macOS) or `md5sum checkpoints.zi
 
 These checkpoints enable full reproduction of all figures without retraining (~40 GPU hours).
 
-## Report Build
-
-```bash
-cd Report
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
-```
-
-## Presentation Build
-
-The final presentation lives in `presentation/`.
-
-```bash
-cd presentation
-pdflatex main.tex
-```
-
 ## Reproducibility Requirements
 
 These are enforced project conventions:
@@ -305,8 +286,6 @@ bilinear_mlp_reproduction/
 ├── scripts/             # Experiment runners and figure generation
 ├── configs/             # YAML experiment configs
 ├── tests/               # Unit tests (pytest)
-├── Report/              # Final report (LaTeX + figures)
-├── presentation/        # Final slides
 ├── environment.yml      # GPU environment (CUDA)
 ├── environment_cpu.yml  # CPU/MPS environment (Mac/local)
 └── bilinear-decomposition-main/  # Original paper code (wrapped, not modified)
