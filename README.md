@@ -243,8 +243,8 @@ If automatic download fails (e.g., SSL issues, rate limiting), download manually
 
 | File | Size | MD5 |
 |------|------|-----|
-| checkpoints.zip | ~3.3 GB | `33e1c3e2a2f7eb7b1f011a03c2c9ee78` |
-| results.zip | ~196 MB | `2d9bbcd60dd5b5925fdee1b14a42a2d6` |
+| checkpoints.zip | ~3.6 GB | `a457f540b0acb7cbda9d9c94173456fb` |
+| results.zip | ~187 MB | `b7b41d9af61750c7dfc9b6a5cb1a3324` |
 
 Verify with: `md5 checkpoints.zip results.zip` (macOS) or `md5sum checkpoints.zip results.zip` (Linux)
 
